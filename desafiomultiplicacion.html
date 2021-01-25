@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+     
+
+        var num = parseInt(prompt("ingrese un numero"));
+        if (num > 0 && num < 21) {
+            for (let i = 1; i <= num; i++) {
+                document.write(`${num} x ${i}=${(num*i)}<br>`);
+            }
+            if  (num>0 && num<21){
+                for (let i = 1; i<=num; i++){
+                    var fact =1;
+                    for (let j=1;j<=i;j++){
+                        fact=fact*j;
+                    }
+                    document.write(`Factorial de ${i} es: ${fact} <br>`);
+                }
+            }
+            } else {
+                alert("debe ingresar un número entre 1 y 20");
+                location.reload();
+            }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
